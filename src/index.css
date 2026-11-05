@@ -1,0 +1,122 @@
+@import "tailwindcss";
+@import "katex/dist/katex.min.css";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  body {
+    @apply antialiased selection:bg-indigo-500 selection:text-white;
+  }
+}
+
+.katex {
+  font-size: 1.08em;
+  text-rendering: geometricPrecision;
+  letter-spacing: 0.01em;
+  color: inherit !important;
+}
+
+.katex-display {
+  margin: 0.65em 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.2em 0;
+  scrollbar-width: thin;
+}
+
+/* Authentic Urdu Nastaliq & Naskh font helper */
+.font-urdu {
+  font-family: 'Noto Nastaliq Urdu', 'Noto Sans Arabic', 'Segoe UI', serif;
+  direction: rtl;
+  line-height: 1.8;
+  word-spacing: 0.05em;
+}
+
+/* Hardware accelerated smooth touch scrolling */
+.touch-pan-y {
+  touch-action: pan-y;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Hide scrollbars for pill scrubber while preserving smooth touch scrolling */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Print styling for homework/worksheet distribution & Test Maker */
+@media print {
+  @page {
+    margin: 8mm 10mm 8mm 10mm;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  /* When printing from the Test Maker */
+  body.is-printing-test {
+    background: white !important;
+  }
+
+  body.is-printing-test #root > *:not(#test-maker-modal-root) {
+    display: none !important;
+  }
+
+  /* Hide app chrome during test printing */
+  .no-print,
+  .test-maker-chrome,
+  .test-maker-picker {
+    display: none !important;
+  }
+
+  /* When test printable sheet is active */
+  #test-maker-modal-root {
+    display: block !important;
+    position: static !important;
+    width: 100% !important;
+    height: auto !important;
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    overflow: visible !important;
+    inset: auto !important;
+  }
+
+  #test-printable-sheet {
+    display: block !important;
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: auto !important;
+    box-shadow: none !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: white !important;
+    color: black !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .page-break-before {
+    page-break-before: always;
+    break-before: page;
+  }
+
+  .break-inside-avoid {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+}
+

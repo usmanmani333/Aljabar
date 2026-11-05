@@ -1,0 +1,1332 @@
+import { BookExerciseSection } from '../bookExercises';
+
+export const UNIT_4_EXERCISES: BookExerciseSection[] = [
+  // ==========================================
+  // EXERCISE 4.1
+  // ==========================================
+  {
+    id: 'u4-ex4.1',
+    unitId: 4,
+    unitTitle: 'Factorization & Algebraic Manipulation',
+    urduTitle: 'تجزی اور الجبرائی تحویل',
+    exerciseId: 'EXERCISE 4.1',
+    pageNumber: 69,
+    headline: 'Common Factors, Grouping & Quadratic Trinomials',
+    keyFormulas: [
+      { label: 'Common Term', formulaLatex: 'ka + kb = k(a + b)' },
+      { label: 'Grouping', formulaLatex: 'ax + ay + bx + by = (a + b)(x + y)' },
+      { label: 'Trinomial Factoring', formulaLatex: 'x^2 + (a+b)x + ab = (x + a)(x + b)' },
+    ],
+    questions: [
+      {
+        id: 'u4-ex4.1-q1',
+        questionNumber: 1,
+        mainInstruction: 'Factorize by identifying common factors:',
+        subParts: [
+          {
+            id: 'u4-ex4.1-q1-i',
+            partLabel: '(i)',
+            statementLatex: '6x + 12',
+            hint: 'Common factor is 6.',
+            solutionSteps: ['= 6(x) + 6(2)', '= 6(x + 2)'],
+            finalAnswer: '6(x + 2)',
+          },
+          {
+            id: 'u4-ex4.1-q1-ii',
+            partLabel: '(ii)',
+            statementLatex: '15y^2 + 20y',
+            hint: 'Common factor is 5y.',
+            solutionSteps: ['= 5y(3y) + 5y(4)', '= 5y(3y + 4)'],
+            finalAnswer: '5y(3y + 4)',
+          },
+          {
+            id: 'u4-ex4.1-q1-iii',
+            partLabel: '(iii)',
+            statementLatex: '-12x^2 - 3x',
+            hint: 'Factor out -3x.',
+            solutionSteps: ['= -3x(4x) + (-3x)(1)', '= -3x(4x + 1)'],
+            finalAnswer: '-3x(4x + 1)',
+          },
+          {
+            id: 'u4-ex4.1-q1-iv',
+            partLabel: '(iv)',
+            statementLatex: '4a^2b + 8ab^2',
+            hint: 'Common factor is 4ab.',
+            solutionSteps: ['= 4ab(a) + 4ab(2b)', '= 4ab(a + 2b)'],
+            finalAnswer: '4ab(a + 2b)',
+          },
+          {
+            id: 'u4-ex4.1-q1-v',
+            partLabel: '(v)',
+            statementLatex: 'xy - 3x^2 + 2x',
+            hint: 'Common factor is x.',
+            solutionSteps: ['= x(y) - x(3x) + x(2)', '= x(y - 3x + 2)'],
+            finalAnswer: 'x(y - 3x + 2)',
+          },
+          {
+            id: 'u4-ex4.1-q1-vi',
+            partLabel: '(vi)',
+            statementLatex: '3a^2b - 9ab^2 + 15ab',
+            hint: 'Common factor is 3ab.',
+            solutionSteps: ['= 3ab(a) - 3ab(3b) + 3ab(5)', '= 3ab(a - 3b + 5)'],
+            finalAnswer: '3ab(a - 3b + 5)',
+          },
+        ],
+      },
+      {
+        id: 'u4-ex4.1-q2',
+        questionNumber: 2,
+        mainInstruction: 'Factorize and represent pictorially:',
+        subParts: [
+          {
+            id: 'u4-ex4.1-q2-i',
+            partLabel: '(i)',
+            statementLatex: '5x + 15',
+            hint: 'Common factor 5 gives rectangle dimensions.',
+            solutionSteps: ['= 5(x) + 5(3)', '= 5(x + 3)'],
+            finalAnswer: '5(x + 3)',
+          },
+          {
+            id: 'u4-ex4.1-q2-ii',
+            partLabel: '(ii)',
+            statementLatex: 'x^2 + 4x + 3',
+            hint: 'Split 4x into 3x + x.',
+            solutionSteps: [
+              '= x^2 + 3x + x + 3',
+              '= x(x + 3) + 1(x + 3)',
+              '= (x + 3)(x + 1)',
+            ],
+            finalAnswer: '(x + 3)(x + 1)',
+          },
+          {
+            id: 'u4-ex4.1-q2-iii',
+            partLabel: '(iii)',
+            statementLatex: 'x^2 + 6x + 8',
+            hint: 'Split 6x into 4x + 2x.',
+            solutionSteps: [
+              '= x^2 + 4x + 2x + 8',
+              '= x(x + 4) + 2(x + 4)',
+              '= (x + 4)(x + 2)',
+            ],
+            finalAnswer: '(x + 4)(x + 2)',
+          },
+          {
+            id: 'u4-ex4.1-q2-iv',
+            partLabel: '(iv)',
+            statementLatex: 'x^2 + 4x + 4',
+            hint: 'Square of binomial (x + 2).',
+            solutionSteps: [
+              '= x^2 + 2x + 2x + 4',
+              '= x(x + 2) + 2(x + 2)',
+              '= (x + 2)(x + 2) = (x + 2)^2',
+            ],
+            finalAnswer: '(x + 2)^2',
+          },
+        ],
+      },
+      {
+        id: 'u4-ex4.1-q3',
+        questionNumber: 3,
+        mainInstruction: 'Factorize:',
+        subParts: [
+          {
+            id: 'u4-ex4.1-q3-i',
+            partLabel: '(i)',
+            statementLatex: 'x^2 + x - 12',
+            solutionSteps: [
+              '= x^2 + 4x - 3x - 12',
+              '= x(x + 4) - 3(x + 4)',
+              '= (x + 4)(x - 3)',
+            ],
+            finalAnswer: '(x + 4)(x - 3)',
+          },
+          {
+            id: 'u4-ex4.1-q3-ii',
+            partLabel: '(ii)',
+            statementLatex: 'x^2 + 7x + 10',
+            solutionSteps: [
+              '= x^2 + 5x + 2x + 10',
+              '= x(x + 5) + 2(x + 5)',
+              '= (x + 5)(x + 2)',
+            ],
+            finalAnswer: '(x + 5)(x + 2)',
+          },
+          {
+            id: 'u4-ex4.1-q3-iii',
+            partLabel: '(iii)',
+            statementLatex: 'x^2 - 6x + 8',
+            solutionSteps: [
+              '= x^2 - 4x - 2x + 8',
+              '= x(x - 4) - 2(x - 4)',
+              '= (x - 4)(x - 2)',
+            ],
+            finalAnswer: '(x - 4)(x - 2)',
+          },
+          {
+            id: 'u4-ex4.1-q3-iv',
+            partLabel: '(iv)',
+            statementLatex: 'x^2 - x - 56',
+            solutionSteps: [
+              '= x^2 - 8x + 7x - 56',
+              '= x(x - 8) + 7(x - 8)',
+              '= (x - 8)(x + 7)',
+            ],
+            finalAnswer: '(x - 8)(x + 7)',
+          },
+          {
+            id: 'u4-ex4.1-q3-v',
+            partLabel: '(v)',
+            statementLatex: 'x^2 - 10x - 24',
+            solutionSteps: [
+              '= x^2 - 12x + 2x - 24',
+              '= x(x - 12) + 2(x - 12)',
+              '= (x - 12)(x + 2)',
+            ],
+            finalAnswer: '(x - 12)(x + 2)',
+          },
+          {
+            id: 'u4-ex4.1-q3-vi',
+            partLabel: '(vi)',
+            statementLatex: 'y^2 + 4y - 12',
+            solutionSteps: [
+              '= y^2 + 6y - 2y - 12',
+              '= y(y + 6) - 2(y + 6)',
+              '= (y + 6)(y - 2)',
+            ],
+            finalAnswer: '(y + 6)(y - 2)',
+          },
+          {
+            id: 'u4-ex4.1-q3-vii',
+            partLabel: '(vii)',
+            statementLatex: 'y^2 + 13y + 36',
+            solutionSteps: [
+              '= y^2 + 9y + 4y + 36',
+              '= y(y + 9) + 4(y + 9)',
+              '= (y + 9)(y + 4)',
+            ],
+            finalAnswer: '(y + 9)(y + 4)',
+          },
+          {
+            id: 'u4-ex4.1-q3-viii',
+            partLabel: '(viii)',
+            statementLatex: 'x^2 - x - 2',
+            solutionSteps: [
+              '= x^2 - 2x + x - 2',
+              '= x(x - 2) + 1(x - 2)',
+              '= (x - 2)(x + 1)',
+            ],
+            finalAnswer: '(x - 2)(x + 1)',
+          },
+        ],
+      },
+      {
+        id: 'u4-ex4.1-q4',
+        questionNumber: 4,
+        mainInstruction: 'Factorize:',
+        subParts: [
+          {
+            id: 'u4-ex4.1-q4-i',
+            partLabel: '(i)',
+            statementLatex: '2x^2 + 7x + 3',
+            solutionSteps: [
+              '= 2x^2 + 6x + x + 3',
+              '= 2x(x + 3) + 1(x + 3)',
+              '= (x + 3)(2x + 1)',
+            ],
+            finalAnswer: '(x + 3)(2x + 1)',
+          },
+          {
+            id: 'u4-ex4.1-q4-ii',
+            partLabel: '(ii)',
+            statementLatex: '2x^2 + 11x + 15',
+            solutionSteps: [
+              '= 2x^2 + 6x + 5x + 15',
+              '= 2x(x + 3) + 5(x + 3)',
+              '= (x + 3)(2x + 5)',
+            ],
+            finalAnswer: '(x + 3)(2x + 5)',
+          },
+          {
+            id: 'u4-ex4.1-q4-iii',
+            partLabel: '(iii)',
+            statementLatex: '4x^2 + 13x + 3',
+            solutionSteps: [
+              '= 4x^2 + 12x + x + 3',
+              '= 4x(x + 3) + 1(x + 3)',
+              '= (x + 3)(4x + 1)',
+            ],
+            finalAnswer: '(x + 3)(4x + 1)',
+          },
+          {
+            id: 'u4-ex4.1-q4-iv',
+            partLabel: '(iv)',
+            statementLatex: '3x^2 + 5x + 2',
+            solutionSteps: [
+              '= 3x^2 + 3x + 2x + 2',
+              '= 3x(x + 1) + 2(x + 1)',
+              '= (x + 1)(3x + 2)',
+            ],
+            finalAnswer: '(x + 1)(3x + 2)',
+          },
+          {
+            id: 'u4-ex4.1-q4-v',
+            partLabel: '(v)',
+            statementLatex: '3y^2 - 11y + 6',
+            solutionSteps: [
+              '= 3y^2 - 9y - 2y + 6',
+              '= 3y(y - 3) - 2(y - 3)',
+              '= (y - 3)(3y - 2)',
+            ],
+            finalAnswer: '(y - 3)(3y - 2)',
+          },
+          {
+            id: 'u4-ex4.1-q4-vi',
+            partLabel: '(vi)',
+            statementLatex: '2y^2 - 5y + 2',
+            solutionSteps: [
+              '= 2y^2 - 4y - y + 2',
+              '= 2y(y - 2) - 1(y - 2)',
+              '= (y - 2)(2y - 1)',
+            ],
+            finalAnswer: '(y - 2)(2y - 1)',
+          },
+          {
+            id: 'u4-ex4.1-q4-vii',
+            partLabel: '(vii)',
+            statementLatex: '4z^2 - 11z + 6',
+            solutionSteps: [
+              '= 4z^2 - 8z - 3z + 6',
+              '= 4z(z - 2) - 3(z - 2)',
+              '= (z - 2)(4z - 3)',
+            ],
+            finalAnswer: '(z - 2)(4z - 3)',
+          },
+          {
+            id: 'u4-ex4.1-q4-viii',
+            partLabel: '(viii)',
+            statementLatex: '6 + 7x - 3x^2',
+            solutionSteps: [
+              '= 6 + 9x - 2x - 3x^2',
+              '= 3(2 + 3x) - x(2 + 3x)',
+              '= (2 + 3x)(3 - x)',
+            ],
+            finalAnswer: '(2 + 3x)(3 - x)',
+          },
+        ],
+      },
+    ],
+  },
+
+  // ==========================================
+  // EXERCISE 4.2 (100% Authentic New Book Match)
+  // ==========================================
+  {
+    id: 'u4-ex4.2',
+    unitId: 4,
+    unitTitle: 'Factorization & Algebraic Manipulation',
+    urduTitle: 'تجزی اور الجبرائی تحویل',
+    exerciseId: 'EXERCISE 4.2',
+    pageNumber: 73,
+    headline: 'Completing Square, Quartic Expressions & Cubes',
+    keyFormulas: [
+      { label: 'Completing Square', formulaLatex: 'a^4 + 4b^4 = (a^2 + 2b^2)^2 - (2ab)^2' },
+      { label: 'Difference of Squares', formulaLatex: 'A^2 - B^2 = (A - B)(A + B)' },
+      { label: 'Sum of Cubes', formulaLatex: 'a^3 + b^3 = (a + b)(a^2 - ab + b^2)' },
+      { label: 'Diff of Cubes', formulaLatex: 'a^3 - b^3 = (a - b)(a^2 + ab + b^2)' },
+      { label: 'Cube of Binomial', formulaLatex: '(a \\pm b)^3 = a^3 \\pm 3a^2b + 3ab^2 \\pm b^3' },
+    ],
+    questions: [
+      {
+        id: 'u4-ex4.2-q1',
+        questionNumber: 1,
+        mainInstruction: 'Factorize each of the following expressions:',
+        subParts: [
+          {
+            id: 'u4-ex4.2-q1-i',
+            partLabel: '(i)',
+            statementLatex: '4x^4 + 81y^4',
+            solutionSteps: [
+              '= (2x^2)^2 + (9y^2)^2',
+              '= (2x^2)^2 + 2(2x^2)(9y^2) + (9y^2)^2 - 36x^2y^2',
+              '= (2x^2 + 9y^2)^2 - (6xy)^2',
+              '= (2x^2 + 9y^2 - 6xy)(2x^2 + 9y^2 + 6xy)',
+              '= (2x^2 - 6xy + 9y^2)(2x^2 + 6xy + 9y^2)',
+            ],
+            finalAnswer: '(2x^2 - 6xy + 9y^2)(2x^2 + 6xy + 9y^2)',
+          },
+          {
+            id: 'u4-ex4.2-q1-ii',
+            partLabel: '(ii)',
+            statementLatex: 'a^4 + 64b^4',
+            solutionSteps: [
+              '= (a^2)^2 + (8b^2)^2',
+              '= (a^2)^2 + 2(a^2)(8b^2) + (8b^2)^2 - 16a^2b^2',
+              '= (a^2 + 8b^2)^2 - (4ab)^2',
+              '= (a^2 - 4ab + 8b^2)(a^2 + 4ab + 8b^2)',
+            ],
+            finalAnswer: '(a^2 - 4ab + 8b^2)(a^2 + 4ab + 8b^2)',
+          },
+          {
+            id: 'u4-ex4.2-q1-iii',
+            partLabel: '(iii)',
+            statementLatex: 'x^4 + 4x^2 + 16',
+            solutionSteps: [
+              '= (x^2)^2 + (4)^2 + 4x^2',
+              '= (x^2)^2 + 2(x^2)(4) + (4)^2 - 8x^2 + 4x^2',
+              '= (x^2 + 4)^2 - 4x^2',
+              '= (x^2 + 4)^2 - (2x)^2',
+              '= (x^2 - 2x + 4)(x^2 + 2x + 4)',
+            ],
+            finalAnswer: '(x^2 - 2x + 4)(x^2 + 2x + 4)',
+          },
+          {
+            id: 'u4-ex4.2-q1-iv',
+            partLabel: '(iv)',
+            statementLatex: 'x^4 - 14x^2 + 1',
+            solutionSteps: [
+              '= (x^2)^2 + 2(x^2)(1) + (1)^2 - 2x^2 - 14x^2',
+              '= (x^2 + 1)^2 - 16x^2',
+              '= (x^2 + 1)^2 - (4x)^2',
+              '= (x^2 - 4x + 1)(x^2 + 4x + 1)',
+            ],
+            finalAnswer: '(x^2 - 4x + 1)(x^2 + 4x + 1)',
+          },
+          {
+            id: 'u4-ex4.2-q1-v',
+            partLabel: '(v)',
+            statementLatex: 'x^4 - 30x^2y^2 + 9y^4',
+            solutionSteps: [
+              '= (x^2)^2 - 2(x^2)(3y^2) + (3y^2)^2 + 6x^2y^2 - 30x^2y^2',
+              '= (x^2 - 3y^2)^2 - 24x^2y^2',
+              '= (x^2 - 3y^2)^2 - (2\\sqrt{6}xy)^2',
+              '= (x^2 - 2\\sqrt{6}xy - 3y^2)(x^2 + 2\\sqrt{6}xy - 3y^2)',
+            ],
+            finalAnswer: '(x^2 - 2\\sqrt{6}xy - 3y^2)(x^2 + 2\\sqrt{6}xy - 3y^2)',
+          },
+          {
+            id: 'u4-ex4.2-q1-vi',
+            partLabel: '(vi)',
+            statementLatex: 'x^4 + 11x^2y^2 + y^4',
+            solutionSteps: [
+              '= (x^2 + y^2)^2 + 9x^2y^2',
+              '= (x^2 - 3xy + y^2)(x^2 + 3xy + y^2)',
+            ],
+            finalAnswer: '(x^2 - 3xy + y^2)(x^2 + 3xy + y^2)',
+          },
+        ],
+      },
+      {
+        id: 'u4-ex4.2-q2',
+        questionNumber: 2,
+        mainInstruction: 'Factorize each of the following expressions:',
+        subParts: [
+          {
+            id: 'u4-ex4.2-q2-i',
+            partLabel: '(i)',
+            statementLatex: '(x + 1)(x + 2)(x + 3)(x + 4) + 1',
+            solutionSteps: [
+              '= [(x + 1)(x + 4)][(x + 2)(x + 3)] + 1',
+              '= (x^2 + 5x + 4)(x^2 + 5x + 6) + 1',
+              'y = x^2 + 5x',
+              '= (y + 4)(y + 6) + 1 = y^2 + 10y + 25',
+              '= (y + 5)^2',
+              '= (x^2 + 5x + 5)^2',
+            ],
+            finalAnswer: '(x^2 + 5x + 5)^2',
+          },
+          {
+            id: 'u4-ex4.2-q2-ii',
+            partLabel: '(ii)',
+            statementLatex: '(x + 2)(x - 7)(x - 4)(x - 1) + 17',
+            solutionSteps: [
+              '= [(x + 2)(x - 7)][(x - 4)(x - 1)] + 17',
+              '= (x^2 - 5x - 14)(x^2 - 5x + 4) + 17',
+              'y = x^2 - 5x',
+              '= (y - 14)(y + 4) + 17 = y^2 - 10y - 39',
+              '= (y - 13)(y + 3)',
+              '= (x^2 - 5x - 13)(x^2 - 5x + 3)',
+            ],
+            finalAnswer: '(x^2 - 5x - 13)(x^2 - 5x + 3)',
+          },
+          {
+            id: 'u4-ex4.2-q2-iii',
+            partLabel: '(iii)',
+            statementLatex: '(2x^2 + 7x + 3)(2x^2 + 7x + 5) + 1',
+            solutionSteps: [
+              'y = 2x^2 + 7x',
+              '= (y + 3)(y + 5) + 1 = y^2 + 8y + 16',
+              '= (y + 4)^2',
+              '= (2x^2 + 7x + 4)^2',
+            ],
+            finalAnswer: '(2x^2 + 7x + 4)^2',
+          },
+          {
+            id: 'u4-ex4.2-q2-iv',
+            partLabel: '(iv)',
+            statementLatex: '(3x^2 + 5x + 3)(3x^2 + 5x + 5) - 3',
+            solutionSteps: [
+              'y = 3x^2 + 5x',
+              '= (y + 3)(y + 5) - 3 = y^2 + 8y + 12',
+              '= (y + 6)(y + 2)',
+              '= (3x^2 + 5x + 6)(3x^2 + 5x + 2)',
+              '= (3x^2 + 5x + 6)(x + 1)(3x + 2)',
+            ],
+            finalAnswer: '(3x^2 + 5x + 6)(x + 1)(3x + 2)',
+          },
+          {
+            id: 'u4-ex4.2-q2-v',
+            partLabel: '(v)',
+            statementLatex: '(x + 1)(x + 2)(x + 3)(x + 6) - 3x^2',
+            solutionSteps: [
+              '= [(x + 1)(x + 6)][(x + 2)(x + 3)] - 3x^2',
+              '= (x^2 + 7x + 6)(x^2 + 5x + 6) - 3x^2',
+              '= [(x^2 + 6) + 7x][(x^2 + 6) + 5x] - 3x^2',
+              'y = x^2 + 6',
+              '= (y + 7x)(y + 5x) - 3x^2 = y^2 + 12xy + 32x^2',
+              '= (y + 8x)(y + 4x)',
+              '= (x^2 + 8x + 6)(x^2 + 4x + 6)',
+            ],
+            finalAnswer: '(x^2 + 8x + 6)(x^2 + 4x + 6)',
+          },
+          {
+            id: 'u4-ex4.2-q2-vi',
+            partLabel: '(vi)',
+            statementLatex: '(x + 1)(x - 1)(x + 2)(x - 2) + 13x^2',
+            solutionSteps: [
+              '= (x^2 - 1)(x^2 - 4) + 13x^2',
+              '= x^4 - 5x^2 + 4 + 13x^2',
+              '= x^4 + 8x^2 + 4',
+              '= (x^2 + 2)^2 + 4x^2',
+            ],
+            finalAnswer: 'x^4 + 8x^2 + 4',
+          },
+        ],
+      },
+      {
+        id: 'u4-ex4.2-q3',
+        questionNumber: 3,
+        mainInstruction: 'Factorize:',
+        subParts: [
+          {
+            id: 'u4-ex4.2-q3-i',
+            partLabel: '(i)',
+            statementLatex: '8x^3 + 12x^2 + 6x + 1',
+            solutionSteps: [
+              '= (2x)^3 + 3(2x)^2(1) + 3(2x)(1)^2 + (1)^3',
+              '= (2x + 1)^3',
+            ],
+            finalAnswer: '(2x + 1)^3',
+          },
+          {
+            id: 'u4-ex4.2-q3-ii',
+            partLabel: '(ii)',
+            statementLatex: '27a^3 + 108a^2b + 144ab^2 + 64b^3',
+            solutionSteps: [
+              '= (3a)^3 + 3(3a)^2(4b) + 3(3a)(4b)^2 + (4b)^3',
+              '= (3a + 4b)^3',
+            ],
+            finalAnswer: '(3a + 4b)^3',
+          },
+          {
+            id: 'u4-ex4.2-q3-iii',
+            partLabel: '(iii)',
+            statementLatex: 'x^3 + 18x^2y + 108xy^2 + 216y^3',
+            solutionSteps: [
+              '= (x)^3 + 3(x)^2(6y) + 3(x)(6y)^2 + (6y)^3',
+              '= (x + 6y)^3',
+            ],
+            finalAnswer: '(x + 6y)^3',
+          },
+          {
+            id: 'u4-ex4.2-q3-iv',
+            partLabel: '(iv)',
+            statementLatex: '8x^3 - 125y^3 + 150xy^2 - 60x^2y',
+            solutionSteps: [
+              '= 8x^3 - 60x^2y + 150xy^2 - 125y^3',
+              '= (2x)^3 - 3(2x)^2(5y) + 3(2x)(5y)^2 - (5y)^3',
+              '= (2x - 5y)^3',
+            ],
+            finalAnswer: '(2x - 5y)^3',
+          },
+        ],
+      },
+      {
+        id: 'u4-ex4.2-q4',
+        questionNumber: 4,
+        mainInstruction: 'Factorize:',
+        subParts: [
+          {
+            id: 'u4-ex4.2-q4-i',
+            partLabel: '(i)',
+            statementLatex: '125a^3 - 1',
+            solutionSteps: [
+              '= (5a)^3 - (1)^3',
+              '= (5a - 1)[(5a)^2 + (5a)(1) + (1)^2]',
+              '= (5a - 1)(25a^2 + 5a + 1)',
+            ],
+            finalAnswer: '(5a - 1)(25a^2 + 5a + 1)',
+          },
+          {
+            id: 'u4-ex4.2-q4-ii',
+            partLabel: '(ii)',
+            statementLatex: '64x^3 + 125',
+            solutionSteps: [
+              '= (4x)^3 + (5)^3',
+              '= (4x + 5)[(4x)^2 - (4x)(5) + (5)^2]',
+              '= (4x + 5)(16x^2 - 20x + 25)',
+            ],
+            finalAnswer: '(4x + 5)(16x^2 - 20x + 25)',
+          },
+          {
+            id: 'u4-ex4.2-q4-iii',
+            partLabel: '(iii)',
+            statementLatex: 'x^6 - 27',
+            solutionSteps: [
+              '= (x^2)^3 - (3)^3',
+              '= (x^2 - 3)[(x^2)^2 + (x^2)(3) + (3)^2]',
+              '= (x^2 - 3)(x^4 + 3x^2 + 9)',
+            ],
+            finalAnswer: '(x^2 - 3)(x^4 + 3x^2 + 9)',
+          },
+          {
+            id: 'u4-ex4.2-q4-iv',
+            partLabel: '(iv)',
+            statementLatex: '1000a^3 + 1',
+            solutionSteps: [
+              '= (10a)^3 + (1)^3',
+              '= (10a + 1)[(10a)^2 - (10a)(1) + (1)^2]',
+              '= (10a + 1)(100a^2 - 10a + 1)',
+            ],
+            finalAnswer: '(10a + 1)(100a^2 - 10a + 1)',
+          },
+          {
+            id: 'u4-ex4.2-q4-v',
+            partLabel: '(v)',
+            statementLatex: '343x^3 + 216',
+            solutionSteps: [
+              '= (7x)^3 + (6)^3',
+              '= (7x + 6)[(7x)^2 - (7x)(6) + (6)^2]',
+              '= (7x + 6)(49x^2 - 42x + 36)',
+            ],
+            finalAnswer: '(7x + 6)(49x^2 - 42x + 36)',
+          },
+          {
+            id: 'u4-ex4.2-q4-vi',
+            partLabel: '(vi)',
+            statementLatex: '27 - 512y^3',
+            solutionSteps: [
+              '= (3)^3 - (8y)^3',
+              '= (3 - 8y)[(3)^2 + (3)(8y) + (8y)^2]',
+              '= (3 - 8y)(9 + 24y + 64y^2)',
+            ],
+            finalAnswer: '(3 - 8y)(9 + 24y + 64y^2)',
+          },
+        ],
+      },
+    ],
+  },
+
+  // ==========================================
+  // EXERCISE 4.3
+  // ==========================================
+  {
+    id: 'u4-ex4.3',
+    unitId: 4,
+    unitTitle: 'Factorization & Algebraic Manipulation',
+    urduTitle: 'تجزی اور الجبرائی تحویل',
+    exerciseId: 'EXERCISE 4.3',
+    pageNumber: 77,
+    headline: 'Highest Common Factor (HCF) & Least Common Multiple (LCM)',
+    keyFormulas: [
+      { label: 'Fundamental Relation', formulaLatex: 'p(x) \\times q(x) = \\text{HCF} \\times \\text{LCM}' },
+      { label: 'Division Algorithm', formulaLatex: 'P(x) = D(x)Q(x) + R(x)' },
+    ],
+    questions: [
+      {
+        id: 'u4-ex4.3-q1',
+        questionNumber: 1,
+        mainInstruction: 'Find HCF by factorization method:',
+        subParts: [
+          {
+            id: 'u4-ex4.3-q1-i',
+            partLabel: '(i)',
+            statementLatex: '21x^2y, \\quad 35xy^2',
+            solutionSteps: [
+              '21x^2y = 3 \\cdot 7 \\cdot x^2 \\cdot y',
+              '35xy^2 = 5 \\cdot 7 \\cdot x \\cdot y^2',
+              '\\text{HCF} = 7xy',
+            ],
+            finalAnswer: '7xy',
+          },
+          {
+            id: 'u4-ex4.3-q1-ii',
+            partLabel: '(ii)',
+            statementLatex: '4x^2 - 9y^2, \\quad 2x^2 - 3xy',
+            solutionSteps: [
+              '4x^2 - 9y^2 = (2x - 3y)(2x + 3y)',
+              '2x^2 - 3xy = x(2x - 3y)',
+              '\\text{HCF} = 2x - 3y',
+            ],
+            finalAnswer: '2x - 3y',
+          },
+          {
+            id: 'u4-ex4.3-q1-iii',
+            partLabel: '(iii)',
+            statementLatex: 'x^3 - 1, \\quad x^2 + x + 1',
+            solutionSteps: [
+              'x^3 - 1 = (x - 1)(x^2 + x + 1)',
+              'x^2 + x + 1 = x^2 + x + 1',
+              '\\text{HCF} = x^2 + x + 1',
+            ],
+            finalAnswer: 'x^2 + x + 1',
+          },
+          {
+            id: 'u4-ex4.3-q1-iv',
+            partLabel: '(iv)',
+            statementLatex: 'a^3 + 2a^2 - 3a, \\quad 2a^3 + 5a^2 - 3a',
+            solutionSteps: [
+              'a^3 + 2a^2 - 3a = a(a^2 + 2a - 3) = a(a + 3)(a - 1)',
+              '2a^3 + 5a^2 - 3a = a(2a^2 + 5a - 3) = a(a + 3)(2a - 1)',
+              '\\text{HCF} = a(a + 3)',
+            ],
+            finalAnswer: 'a(a + 3)',
+          },
+          {
+            id: 'u4-ex4.3-q1-v',
+            partLabel: '(v)',
+            statementLatex: 't^2 + 3t - 4, \\quad t^2 + 5t + 4, \\quad t^2 - 1',
+            solutionSteps: [
+              't^2 + 3t - 4 = (t + 4)(t - 1)',
+              't^2 + 5t + 4 = (t + 4)(t + 1)',
+              't^2 - 1 = (t - 1)(t + 1)',
+              '\\text{HCF} = 1',
+            ],
+            finalAnswer: '1',
+          },
+          {
+            id: 'u4-ex4.3-q1-vi',
+            partLabel: '(vi)',
+            statementLatex: 'x^2 + 15x + 56, \\quad x^2 + 5x - 24, \\quad x^2 + 8x',
+            solutionSteps: [
+              'x^2 + 15x + 56 = (x + 8)(x + 7)',
+              'x^2 + 5x - 24 = (x + 8)(x - 3)',
+              'x^2 + 8x = x(x + 8)',
+              '\\text{HCF} = x + 8',
+            ],
+            finalAnswer: 'x + 8',
+          },
+        ],
+      },
+      {
+        id: 'u4-ex4.3-q2',
+        questionNumber: 2,
+        mainInstruction: 'Find HCF of the following expressions by using division method:',
+        subParts: [
+          {
+            id: 'u4-ex4.3-q2-i',
+            partLabel: '(i)',
+            statementLatex: '27x^3 + 9x^2 - 3x - 9, \\quad 3x - 2',
+            solutionSteps: [
+              '(27x^3 + 9x^2 - 3x - 9) \\div (3x - 2) = 9x^2 + 9x + 5 \\quad \\text{R: } 1',
+              '\\text{HCF} = 1',
+            ],
+            finalAnswer: '1',
+          },
+          {
+            id: 'u4-ex4.3-q2-ii',
+            partLabel: '(ii)',
+            statementLatex: 'x^3 - 9x^2 + 21x - 15, \\quad x^2 - 4x + 3',
+            solutionSteps: [
+              '(x^3 - 9x^2 + 21x - 15) - x(x^2 - 4x + 3) = -5x^2 + 18x - 15',
+              '(-5x^2 + 18x - 15) - (-5)(x^2 - 4x + 3) = -2x',
+              '\\text{HCF} = 1',
+            ],
+            finalAnswer: '1',
+          },
+          {
+            id: 'u4-ex4.3-q2-iii',
+            partLabel: '(iii)',
+            statementLatex: '2x^3 + 2x^2 + 2x + 2, \\quad 6x^3 + 12x^2 + 6x + 12',
+            solutionSteps: [
+              'P_1 = 2(x^3 + x^2 + x + 1), \\quad P_2 = 6(x^3 + 2x^2 + x + 2)',
+              '(x^3 + 2x^2 + x + 2) - (x^3 + x^2 + x + 1) = x^2 + 1',
+              '(x^3 + x^2 + x + 1) = (x + 1)(x^2 + 1) + 0',
+              '\\text{HCF} = 2(x^2 + 1)',
+            ],
+            finalAnswer: '2(x^2 + 1)',
+          },
+          {
+            id: 'u4-ex4.3-q2-iv',
+            partLabel: '(iv)',
+            statementLatex: '2x^3 - 4x^2 + 6x, \\quad x^3 - 2x, \\quad 3x^2 - 6x',
+            solutionSteps: [
+              'P_1 = 2x(x^2 - 2x + 3), \\quad P_2 = x(x^2 - 2), \\quad P_3 = 3x(x - 2)',
+              '\\text{HCF} = x',
+            ],
+            finalAnswer: 'x',
+          },
+        ],
+      },
+      {
+        id: 'u4-ex4.3-q3',
+        questionNumber: 3,
+        mainInstruction: 'Find LCM of the following expressions by using prime factorization method:',
+        subParts: [
+          {
+            id: 'u4-ex4.3-q3-i',
+            partLabel: '(i)',
+            statementLatex: '2a^2b, \\quad 4ab^2, \\quad 6ab',
+            solutionSteps: [
+              '2a^2b = 2^1 a^2 b^1',
+              '4ab^2 = 2^2 a^1 b^2',
+              '6ab = 2^1 \\cdot 3^1 a^1 b^1',
+              '\\text{LCM} = 2^2 \\cdot 3^1 \\cdot a^2 \\cdot b^2 = 12a^2b^2',
+            ],
+            finalAnswer: '12a^2b^2',
+          },
+          {
+            id: 'u4-ex4.3-q3-ii',
+            partLabel: '(ii)',
+            statementLatex: 'x^2 + x, \\quad x^3 + x^2',
+            solutionSteps: [
+              'x^2 + x = x(x + 1)',
+              'x^3 + x^2 = x^2(x + 1)',
+              '\\text{LCM} = x^2(x + 1)',
+            ],
+            finalAnswer: 'x^2(x + 1)',
+          },
+          {
+            id: 'u4-ex4.3-q3-iii',
+            partLabel: '(iii)',
+            statementLatex: 'a^2 - 4a + 4, \\quad a^2 - 2a',
+            solutionSteps: [
+              'a^2 - 4a + 4 = (a - 2)^2',
+              'a^2 - 2a = a(a - 2)',
+              '\\text{LCM} = a(a - 2)^2',
+            ],
+            finalAnswer: 'a(a - 2)^2',
+          },
+          {
+            id: 'u4-ex4.3-q3-iv',
+            partLabel: '(iv)',
+            statementLatex: 'x^4 - 16, \\quad x^3 - 4x',
+            solutionSteps: [
+              'x^4 - 16 = (x - 2)(x + 2)(x^2 + 4)',
+              'x^3 - 4x = x(x - 2)(x + 2)',
+              '\\text{LCM} = x(x - 2)(x + 2)(x^2 + 4) = x(x^4 - 16)',
+            ],
+            finalAnswer: 'x(x^4 - 16)',
+          },
+          {
+            id: 'u4-ex4.3-q3-v',
+            partLabel: '(v)',
+            statementLatex: '16 - 4x^2, \\quad x^2 + x - 6, \\quad 4 - x^2',
+            solutionSteps: [
+              '16 - 4x^2 = 4(2 - x)(2 + x)',
+              'x^2 + x - 6 = (x + 3)(x - 2) = -(x + 3)(2 - x)',
+              '4 - x^2 = (2 - x)(2 + x)',
+              '\\text{LCM} = 4(x + 3)(2 - x)(2 + x) = 4(x + 3)(4 - x^2)',
+            ],
+            finalAnswer: '4(x + 3)(4 - x^2)',
+          },
+        ],
+      },
+      {
+        id: 'u4-ex4.3-q4',
+        questionNumber: 4,
+        mainInstruction: 'Solve the polynomial relation:',
+        singleStatementLatex:
+          '\\text{The HCF of two polynomials is } y - 7 \\text{ and their LCM is } y^3 - 10y^2 + 11y + 70. \\text{ If one of the polynomials is } y^2 - 5y - 14, \\text{ find the other.}',
+        solutionSteps: [
+          'q(y) = \\frac{\\text{LCM} \\times \\text{HCF}}{p(y)}',
+          'p(y) = (y - 7)(y + 2)',
+          'q(y) = \\frac{(y^3 - 10y^2 + 11y + 70)(y - 7)}{(y - 7)(y + 2)}',
+          'q(y) = \\frac{y^3 - 10y^2 + 11y + 70}{y + 2}',
+          'q(y) = y^2 - 12y + 35',
+        ],
+        finalAnswer: 'y^2 - 12y + 35',
+      },
+      {
+        id: 'u4-ex4.3-q5',
+        questionNumber: 5,
+        mainInstruction: 'Find $q(x)$ given LCM, HCF and $p(x)$:',
+        singleStatementLatex:
+          '\\text{The LCM and HCF of two polynomials } p(x) \\text{ and } q(x) \\text{ are } 36x^3(x + a)(x^3 - a^3) \\text{ and } x^2(x - a) \\text{ respectively. If } p(x) = 4x^2(x^2 - a^2), \\text{ find } q(x).',
+        solutionSteps: [
+          'q(x) = \\frac{\\text{LCM} \\times \\text{HCF}}{p(x)}',
+          'q(x) = \\frac{36x^3(x + a)(x^3 - a^3) \\times x^2(x - a)}{4x^2(x^2 - a^2)}',
+          'q(x) = \\frac{36x^5(x + a)(x - a)(x^3 - a^3)}{4x^2(x - a)(x + a)}',
+          'q(x) = 9x^3(x^3 - a^3)',
+        ],
+        finalAnswer: '9x^3(x^3 - a^3)',
+      },
+      {
+        id: 'u4-ex4.3-q6',
+        questionNumber: 6,
+        mainInstruction: 'Find product of polynomials:',
+        singleStatementLatex:
+          '\\text{The HCF and LCM of two polynomials is } (x + a) \\text{ and } 12x^2(x + a)(x^2 - a^2) \\text{ respectively. Find the product of the two polynomials.}',
+        solutionSteps: [
+          '\\text{Product} = \\text{HCF} \\times \\text{LCM}',
+          '\\text{Product} = (x + a) \\times 12x^2(x + a)(x^2 - a^2)',
+          '\\text{Product} = 12x^2(x + a)^2(x^2 - a^2)',
+        ],
+        finalAnswer: '12x^2(x + a)^2(x^2 - a^2)',
+      },
+    ],
+  },
+
+  // ==========================================
+  // EXERCISE 4.4
+  // ==========================================
+  {
+    id: 'u4-ex4.4',
+    unitId: 4,
+    unitTitle: 'Factorization & Algebraic Manipulation',
+    urduTitle: 'تجزی اور الجبرائی تحویل',
+    exerciseId: 'EXERCISE 4.4',
+    pageNumber: 82,
+    headline: 'Square Root of Polynomials & Quadratic Modeling',
+    keyFormulas: [
+      { label: 'Square Root', formulaLatex: '\\sqrt{A^2} = \\pm A' },
+      { label: 'Trinomial Square Root', formulaLatex: '\\sqrt{a^2 \\pm 2ab + b^2} = \\pm(a \\pm b)' },
+    ],
+    questions: [
+      {
+        id: 'u4-ex4.4-q1',
+        questionNumber: 1,
+        mainInstruction: 'Find the square root of the following polynomials by factorization method:',
+        subParts: [
+          {
+            id: 'u4-ex4.4-q1-i',
+            partLabel: '(i)',
+            statementLatex: 'x^2 - 8x + 16',
+            solutionSteps: ['= (x - 4)^2', '\\sqrt{x^2 - 8x + 16} = \\pm(x - 4)'],
+            finalAnswer: '\\pm(x - 4)',
+          },
+          {
+            id: 'u4-ex4.4-q1-ii',
+            partLabel: '(ii)',
+            statementLatex: '9x^2 + 12x + 4',
+            solutionSteps: ['= (3x + 2)^2', '\\sqrt{9x^2 + 12x + 4} = \\pm(3x + 2)'],
+            finalAnswer: '\\pm(3x + 2)',
+          },
+          {
+            id: 'u4-ex4.4-q1-iii',
+            partLabel: '(iii)',
+            statementLatex: '36a^2 + 84a + 49',
+            solutionSteps: ['= (6a + 7)^2', '\\sqrt{36a^2 + 84a + 49} = \\pm(6a + 7)'],
+            finalAnswer: '\\pm(6a + 7)',
+          },
+          {
+            id: 'u4-ex4.4-q1-iv',
+            partLabel: '(iv)',
+            statementLatex: '64y^2 - 32y + 4',
+            solutionSteps: ['= (8y - 2)^2', '\\sqrt{64y^2 - 32y + 4} = \\pm(8y - 2)'],
+            finalAnswer: '\\pm(8y - 2)',
+          },
+          {
+            id: 'u4-ex4.4-q1-v',
+            partLabel: '(v)',
+            statementLatex: '200t^2 - 120t + 18',
+            solutionSteps: [
+              '= 2(100t^2 - 60t + 9)',
+              '= 2(10t - 3)^2',
+              '\\sqrt{200t^2 - 120t + 18} = \\pm\\sqrt{2}(10t - 3)',
+            ],
+            finalAnswer: '\\pm\\sqrt{2}(10t - 3)',
+          },
+          {
+            id: 'u4-ex4.4-q1-vi',
+            partLabel: '(vi)',
+            statementLatex: '40x^2 + 120x + 90',
+            solutionSteps: [
+              '= 10(4x^2 + 12x + 9)',
+              '= 10(2x + 3)^2',
+              '\\sqrt{40x^2 + 120x + 90} = \\pm\\sqrt{10}(2x + 3)',
+            ],
+            finalAnswer: '\\pm\\sqrt{10}(2x + 3)',
+          },
+        ],
+      },
+      {
+        id: 'u4-ex4.4-q2',
+        questionNumber: 2,
+        mainInstruction: 'Find the square root of the following polynomials by division method:',
+        subParts: [
+          {
+            id: 'u4-ex4.4-q2-i',
+            partLabel: '(i)',
+            statementLatex: '4x^4 - 28x^3 + 37x^2 + 42x + 9',
+            solutionSteps: [
+              '\\text{Quotient: } 2x^2 - 7x - 3',
+              '\\text{Square Root} = \\pm(2x^2 - 7x - 3)',
+            ],
+            finalAnswer: '\\pm(2x^2 - 7x - 3)',
+          },
+          {
+            id: 'u4-ex4.4-q2-ii',
+            partLabel: '(ii)',
+            statementLatex: '121x^4 - 198x^3 - 183x^2 + 216x + 144',
+            solutionSteps: [
+              '\\text{Quotient: } 11x^2 - 9x - 12',
+              '\\text{Square Root} = \\pm(11x^2 - 9x - 12)',
+            ],
+            finalAnswer: '\\pm(11x^2 - 9x - 12)',
+          },
+          {
+            id: 'u4-ex4.4-q2-iii',
+            partLabel: '(iii)',
+            statementLatex: 'x^4 - 10x^3y + 27x^2y^2 - 10xy^3 + y^4',
+            solutionSteps: [
+              '\\text{Quotient: } x^2 - 5xy + y^2',
+              '\\text{Square Root} = \\pm(x^2 - 5xy + y^2)',
+            ],
+            finalAnswer: '\\pm(x^2 - 5xy + y^2)',
+          },
+          {
+            id: 'u4-ex4.4-q2-iv',
+            partLabel: '(iv)',
+            statementLatex: '4x^4 - 12x^3 + 37x^2 - 42x + 49',
+            solutionSteps: [
+              '\\text{Quotient: } 2x^2 - 3x + 7',
+              '\\text{Square Root} = \\pm(2x^2 - 3x + 7)',
+            ],
+            finalAnswer: '\\pm(2x^2 - 3x + 7)',
+          },
+        ],
+      },
+      {
+        id: 'u4-ex4.4-q3',
+        questionNumber: 3,
+        mainInstruction: 'Solve investor return modeling:',
+        singleStatementLatex:
+          '\\text{An investor\'s return } R(x) \\text{ in rupees after investing } x \\text{ thousand rupees is given by } R(x) = -x^2 + 6x - 8. \\text{ Factorize the expression and find the investment levels that result in zero return.}',
+        solutionSteps: [
+          'R(x) = -(x^2 - 6x + 8)',
+          'R(x) = -(x - 4)(x - 2)',
+          'R(x) = 0 \\implies x - 4 = 0 \\text{ or } x - 2 = 0',
+          'x = 4 \\text{ or } x = 2 \\text{ (thousand rupees)}',
+        ],
+        finalAnswer: 'x = 2, 4 \\text{ thousand rupees}',
+      },
+      {
+        id: 'u4-ex4.4-q4',
+        questionNumber: 4,
+        mainInstruction: 'Find break-even point:',
+        singleStatementLatex:
+          '\\text{A company\'s profit } P(x) \\text{ in rupees from selling } x \\text{ units of a product is modeled by } P(x) = x^3 - 15x^2 + 75x - 125. \\text{ Find the break-even point(s), where the profit is zero.}',
+        solutionSteps: [
+          'P(x) = (x)^3 - 3(x)^2(5) + 3(x)(5)^2 - (5)^3',
+          'P(x) = (x - 5)^3',
+          '(x - 5)^3 = 0 \\implies x = 5',
+        ],
+        finalAnswer: 'x = 5 \\text{ units}',
+      },
+      {
+        id: 'u4-ex4.4-q5',
+        questionNumber: 5,
+        mainInstruction: 'Determine zero potential energy:',
+        singleStatementLatex:
+          '\\text{The potential energy } V(x) \\text{ in an electric field varies as a cubic function of distance } x, \\text{ given by } V(x) = 2x^3 - 6x^2 + 4x. \\text{ Determine where the potential energy is zero.}',
+        solutionSteps: [
+          'V(x) = 2x(x^2 - 3x + 2)',
+          'V(x) = 2x(x - 1)(x - 2)',
+          '2x(x - 1)(x - 2) = 0',
+          'x = 0, \\quad x = 1, \\quad x = 2',
+        ],
+        finalAnswer: 'x = 0, 1, 2',
+      },
+      {
+        id: 'u4-ex4.4-q6',
+        questionNumber: 6,
+        mainInstruction: 'Find points of zero deflection:',
+        singleStatementLatex:
+          '\\text{In structural engineering, the deflection } Y(x) \\text{ of a beam is given by } Y(x) = 2x^2 - 8x + 6. \\text{ Find the points of zero deflection.}',
+        solutionSteps: [
+          'Y(x) = 2(x^2 - 4x + 3)',
+          'Y(x) = 2(x - 1)(x - 3)',
+          '2(x - 1)(x - 3) = 0',
+          'x = 1 \\text{ or } x = 3',
+        ],
+        finalAnswer: 'x = 1, 3',
+      },
+    ],
+  },
+
+  // ==========================================
+  // REVIEW EXERCISE 4
+  // ==========================================
+  {
+    id: 'u4-rev4',
+    unitId: 4,
+    unitTitle: 'Factorization & Algebraic Manipulation',
+    urduTitle: 'اعادہ مشق 4',
+    exerciseId: 'REVIEW EXERCISE 4',
+    pageNumber: 87,
+    headline: 'Review Examination: MCQs, Factorization, HCF/LCM & Root Problems',
+    questions: [
+      {
+        id: 'u4-rev4-q1',
+        questionNumber: 1,
+        mainInstruction: 'Multiple Choice Questions:',
+        subParts: [
+          {
+            id: 'u4-rev4-q1-i',
+            partLabel: '(i)',
+            statementLatex: '\\text{The factorization of } 12x + 36 \\text{ is: \\quad (a) } 12(x+3) \\;\\; \\text{(b) } 6(2x+6) \\;\\; \\text{(c) } 3(4x+12)',
+            solutionSteps: ['12x + 36 = 12(x + 3)', '\\text{Option: (a)}'],
+            finalAnswer: '(a) 12(x + 3)',
+          },
+          {
+            id: 'u4-rev4-q1-ii',
+            partLabel: '(ii)',
+            statementLatex: '\\text{The factors of } 4x^2 - 12x + 9 \\text{ are: \\quad (a) } (2x+3)^2 \\;\\; \\text{(b) } (2x-3)^2',
+            solutionSteps: ['4x^2 - 12x + 9 = (2x - 3)^2', '\\text{Option: (b)}'],
+            finalAnswer: '(b) (2x - 3)^2',
+          },
+          {
+            id: 'u4-rev4-q1-iii',
+            partLabel: '(iii)',
+            statementLatex: '\\text{The HCF of } a^3b^3 \\text{ and } ab^2 \\text{ is: \\quad (a) } a^3b^3 \\;\\; \\text{(b) } ab^2',
+            solutionSteps: ['\\text{HCF} = a^1 b^2 = ab^2', '\\text{Option: (b)}'],
+            finalAnswer: '(b) ab^2',
+          },
+          {
+            id: 'u4-rev4-q1-iv',
+            partLabel: '(iv)',
+            statementLatex: '\\text{The LCM of } 16x^2, 4x \\text{ and } 30xy \\text{ is: \\quad (a) } 240x \\;\\; \\text{(b) } 120x^2y \\;\\; \\text{(c) } 240x^2y',
+            solutionSteps: ['\\text{LCM}(16, 4, 30) = 240, \\quad x^2, \\quad y', '\\text{Option: (c)}'],
+            finalAnswer: '(c) 240x^2y',
+          },
+          {
+            id: 'u4-rev4-q1-v',
+            partLabel: '(v)',
+            statementLatex: '\\text{Product of LCM and HCF } = \\underline{\\hspace{1cm}} \\text{ of two polynomials.}',
+            solutionSteps: ['\\text{LCM} \\times \\text{HCF} = \\text{Product}', '\\text{Option: (c)}'],
+            finalAnswer: '(c) product',
+          },
+          {
+            id: 'u4-rev4-q1-vi',
+            partLabel: '(vi)',
+            statementLatex: '\\text{The square root of } x^2 - 6x + 9 \\text{ is: \\quad (a) } \\pm(x-3) \\;\\; \\text{(b) } \\pm(x+3)',
+            solutionSteps: ['\\sqrt{(x - 3)^2} = \\pm(x - 3)', '\\text{Option: (a)}'],
+            finalAnswer: '(a) \\pm(x - 3)',
+          },
+          {
+            id: 'u4-rev4-q1-vii',
+            partLabel: '(vii)',
+            statementLatex: '\\text{The LCM of } (a - b)^2 \\text{ and } (a - b)^4 \\text{ is: \\quad (a) } (a-b)^2 \\;\\; \\text{(b) } (a-b)^6 \\;\\; \\text{(c) } (a-b)^4',
+            solutionSteps: ['\\text{LCM} = (a - b)^4', '\\text{Option: (c)}'],
+            finalAnswer: '(c) (a - b)^4',
+          },
+          {
+            id: 'u4-rev4-q1-viii',
+            partLabel: '(viii)',
+            statementLatex: '\\text{Factorization of } x^3 + 3x^2 + 3x + 1 \\text{ is: \\quad (a) } (x+1)^3 \\;\\; \\text{(b) } (x-1)^3',
+            solutionSteps: ['(x + 1)^3', '\\text{Option: (a)}'],
+            finalAnswer: '(a) (x + 1)^3',
+          },
+          {
+            id: 'u4-rev4-q1-ix',
+            partLabel: '(ix)',
+            statementLatex: '\\text{Cubic polynomial has degree: \\quad (a) } 1 \\;\\; \\text{(b) } 2 \\;\\; \\text{(c) } 3',
+            solutionSteps: ['\\text{Degree} = 3', '\\text{Option: (c)}'],
+            finalAnswer: '(c) 3',
+          },
+          {
+            id: 'u4-rev4-q1-x',
+            partLabel: '(x)',
+            statementLatex: '\\text{One of the factors of } x^3 - 27 \\text{ is: \\quad (a) } x - 3 \\;\\; \\text{(b) } x + 3',
+            solutionSteps: ['(x - 3)(x^2 + 3x + 9)', '\\text{Option: (a)}'],
+            finalAnswer: '(a) x - 3',
+          },
+        ],
+      },
+      {
+        id: 'u4-rev4-q2',
+        questionNumber: 2,
+        mainInstruction: 'Factorize the following expressions:',
+        subParts: [
+          {
+            id: 'u4-rev4-q2-i',
+            partLabel: '(i)',
+            statementLatex: '4x^3 + 18x^2 - 12x',
+            solutionSteps: ['= 2x(2x^2 + 9x - 6)'],
+            finalAnswer: '2x(2x^2 + 9x - 6)',
+          },
+          {
+            id: 'u4-rev4-q2-ii',
+            partLabel: '(ii)',
+            statementLatex: 'x^3 + 64y^3',
+            solutionSteps: [
+              '= (x)^3 + (4y)^3',
+              '= (x + 4y)(x^2 - 4xy + 16y^2)',
+            ],
+            finalAnswer: '(x + 4y)(x^2 - 4xy + 16y^2)',
+          },
+          {
+            id: 'u4-rev4-q2-iii',
+            partLabel: '(iii)',
+            statementLatex: 'x^3y^3 - 8',
+            solutionSteps: [
+              '= (xy)^3 - (2)^3',
+              '= (xy - 2)(x^2y^2 + 2xy + 4)',
+            ],
+            finalAnswer: '(xy - 2)(x^2y^2 + 2xy + 4)',
+          },
+          {
+            id: 'u4-rev4-q2-iv',
+            partLabel: '(iv)',
+            statementLatex: '-x^2 - 23x - 60',
+            solutionSteps: [
+              '= -(x^2 + 23x + 60)',
+              '= -(x^2 + 20x + 3x + 60)',
+              '= -(x + 20)(x + 3)',
+            ],
+            finalAnswer: '-(x + 20)(x + 3)',
+          },
+          {
+            id: 'u4-rev4-q2-v',
+            partLabel: '(v)',
+            statementLatex: '2x^2 + 7x + 3',
+            solutionSteps: [
+              '= 2x^2 + 6x + x + 3',
+              '= 2x(x + 3) + 1(x + 3)',
+              '= (x + 3)(2x + 1)',
+            ],
+            finalAnswer: '(x + 3)(2x + 1)',
+          },
+          {
+            id: 'u4-rev4-q2-vi',
+            partLabel: '(vi)',
+            statementLatex: 'x^4 + 64',
+            solutionSteps: [
+              '= (x^2)^2 + 2(x^2)(8) + 8^2 - 16x^2',
+              '= (x^2 + 8)^2 - (4x)^2',
+              '= (x^2 - 4x + 8)(x^2 + 4x + 8)',
+            ],
+            finalAnswer: '(x^2 - 4x + 8)(x^2 + 4x + 8)',
+          },
+          {
+            id: 'u4-rev4-q2-vii',
+            partLabel: '(vii)',
+            statementLatex: 'x^4 + 2x^2 + 9',
+            solutionSteps: [
+              '= (x^2)^2 + 2(x^2)(3) + 3^2 - 4x^2',
+              '= (x^2 + 3)^2 - (2x)^2',
+              '= (x^2 - 2x + 3)(x^2 + 2x + 3)',
+            ],
+            finalAnswer: '(x^2 - 2x + 3)(x^2 + 2x + 3)',
+          },
+          {
+            id: 'u4-rev4-q2-viii',
+            partLabel: '(viii)',
+            statementLatex: '(x + 3)(x + 4)(x + 5)(x + 6) - 360',
+            solutionSteps: [
+              '= [(x + 3)(x + 6)][(x + 4)(x + 5)] - 360',
+              '= (x^2 + 9x + 18)(x^2 + 9x + 20) - 360',
+              'y = x^2 + 9x',
+              '= (y + 18)(y + 20) - 360 = y^2 + 38y',
+              '= (x^2 + 9x)(x^2 + 9x + 38)',
+              '= x(x + 9)(x^2 + 9x + 38)',
+            ],
+            finalAnswer: 'x(x + 9)(x^2 + 9x + 38)',
+          },
+          {
+            id: 'u4-rev4-q2-ix',
+            partLabel: '(ix)',
+            statementLatex: '(x^2 + 6x + 3)(x^2 + 6x - 9) + 36',
+            solutionSteps: [
+              'y = x^2 + 6x',
+              '= (y + 3)(y - 9) + 36 = y^2 - 6y + 9',
+              '= (y - 3)^2',
+              '= (x^2 + 6x - 3)^2',
+            ],
+            finalAnswer: '(x^2 + 6x - 3)^2',
+          },
+        ],
+      },
+      {
+        id: 'u4-rev4-q3',
+        questionNumber: 3,
+        mainInstruction: 'Find LCM and HCF by prime factorization method:',
+        subParts: [
+          {
+            id: 'u4-rev4-q3-i',
+            partLabel: '(i)',
+            statementLatex: '4x^3 + 12x^2, \\quad 8x^2 + 16x',
+            solutionSteps: [
+              '4x^2(x + 3) = 2^2 x^2 (x + 3)',
+              '8x(x + 2) = 2^3 x (x + 2)',
+              '\\text{HCF} = 4x',
+              '\\text{LCM} = 8x^2(x + 3)(x + 2)',
+            ],
+            finalAnswer: '\\text{HCF} = 4x, \\; \\text{LCM} = 8x^2(x+3)(x+2)',
+          },
+          {
+            id: 'u4-rev4-q3-ii',
+            partLabel: '(ii)',
+            statementLatex: 'x^3 + 3x^2 - 4x, \\quad x^2 - x - 6',
+            solutionSteps: [
+              'x(x + 4)(x - 1)',
+              '(x - 3)(x + 2)',
+              '\\text{HCF} = 1',
+              '\\text{LCM} = x(x - 1)(x + 4)(x - 3)(x + 2)',
+            ],
+            finalAnswer: '\\text{HCF} = 1',
+          },
+          {
+            id: 'u4-rev4-q3-iii',
+            partLabel: '(iii)',
+            statementLatex: 'x^2 + 8x + 16, \\quad x^2 - 16',
+            solutionSteps: [
+              '(x + 4)^2',
+              '(x - 4)(x + 4)',
+              '\\text{HCF} = x + 4',
+              '\\text{LCM} = (x + 4)^2(x - 4)',
+            ],
+            finalAnswer: '\\text{HCF} = x + 4, \\; \\text{LCM} = (x + 4)^2(x - 4)',
+          },
+          {
+            id: 'u4-rev4-q3-iv',
+            partLabel: '(iv)',
+            statementLatex: 'x^3 - 9x, \\quad x^2 - 4x + 3',
+            solutionSteps: [
+              'x(x - 3)(x + 3)',
+              '(x - 3)(x - 1)',
+              '\\text{HCF} = x - 3',
+              '\\text{LCM} = x(x - 3)(x + 3)(x - 1)',
+            ],
+            finalAnswer: '\\text{HCF} = x - 3',
+          },
+        ],
+      },
+      {
+        id: 'u4-rev4-q4',
+        questionNumber: 4,
+        mainInstruction: 'Find square root by factorization and division method:',
+        singleStatementLatex: '16x^4 + 8x^2 + 1',
+        solutionSteps: [
+          '= (4x^2)^2 + 2(4x^2)(1) + (1)^2',
+          '= (4x^2 + 1)^2',
+          '\\sqrt{16x^4 + 8x^2 + 1} = \\pm(4x^2 + 1)',
+        ],
+        finalAnswer: '\\pm(4x^2 + 1)',
+      },
+      {
+        id: 'u4-rev4-q5',
+        questionNumber: 5,
+        mainInstruction: 'Solve loan cost modeling problem:',
+        singleStatementLatex:
+          '\\text{Huria is analyzing the total cost of her loan, modeled by } C(x) = x^2 - 8x + 15, \\text{ where } x \\text{ represents the number of years. What is the optimal repayment period for Huria\'s loan?}',
+        solutionSteps: [
+          'C(x) = (x - 3)(x - 5)',
+          'C(x) = 0 \\implies x = 3 \\text{ or } x = 5',
+          'C(x) = (x - 4)^2 - 1 \\implies \\text{Minimum at } x = 4 \\text{ years}',
+        ],
+        finalAnswer: 'x = 3, 5 \\text{ years (or } x = 4 \\text{ years)}',
+      },
+    ],
+  },
+];

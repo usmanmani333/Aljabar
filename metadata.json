@@ -1,0 +1,6 @@
+{
+  "name": "Al-Jabr | Class 9 Mathematics Digital Problem Solver & Exercise Workbook",
+  "description": "Interactive digital exercise workbook for Class 9 Mathematics (PCTB National Curriculum), featuring automated step-by-step problem solving, real-time diagnostic feedback, multi-tier hints, and visual math tools.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
